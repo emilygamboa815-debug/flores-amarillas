@@ -86,8 +86,8 @@ base_positions = [
 
 #Dibujar solo la cantidad de flores que el usuario eligió
 for i in range(min(num_flowers, len(base_positions))):
-    fx, fy, fs, is_sun = base_positions[i]
-    draw_flower(fx, fy, fs, is_sun)
+    pos = base_positions[i]
+    draw_flower(pos[0], pos[1], pos[2], pos[3])
 
 ax.set_xlim(-2.0, 2.0)
 ax.set_ylim(-2.5, 3.3)
